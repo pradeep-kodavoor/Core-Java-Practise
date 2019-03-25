@@ -45,7 +45,7 @@ class MyThread1 extends Thread {
 
 	@Override
 	public void run() {
-		display.wish(name);
+		Display1.wish(name);
 	}
 
 }

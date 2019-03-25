@@ -55,13 +55,13 @@ public class PracticeClass {
 		System.out.println(object3);
 
 		B b = new B();
-		b.fly();
+		// b.fly(); // B is flying..
 
 		C c = new C();
-		c.fly();
+		// c.fly(); // C is flying..
 
 		B b1 = new C();
-		b1.fly();
+		// b1.fly();// B is flying..
 
 	}
 
@@ -93,7 +93,7 @@ class B {
 }
 
 class C extends B {
-	void fly1() {
+	static void fly() {
 		System.out.println("C is flying..");
 	}
 }
