@@ -1,5 +1,7 @@
 package com.practice.strings;
 
+import java.util.StringJoiner;
+
 public class StringFunctionsRunner {
 
 	public static void main(String[] args) {
@@ -25,6 +27,12 @@ public class StringFunctionsRunner {
 		System.out.println("str.endsWith(\"World\"): " + str.endsWith("World"));
 		System.out.println("str.isEmpty(): " + str.isEmpty());
 		System.out.println("str.equals(\"Hello\"): " + str.equals("Hello"));
+
+		StringJoiner joiner = new StringJoiner(":", "[", "]");
+		joiner.add("Sunday");
+		joiner.add("Monday");
+		joiner.add("Tuesday");
+		System.out.println(joiner.toString());
 
 	}
 

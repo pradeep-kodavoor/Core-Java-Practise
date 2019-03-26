@@ -12,17 +12,17 @@ public class DirectoryScannerRunner {
 
 	public static void main(String[] args) throws IOException {
 		Path currentDirectory = Paths.get(".\\src\\main\\java");
-		// Files.list(currentDirectory).forEach(System.out::println);
+		Files.list(currentDirectory).forEach(System.out::println);
 
 		Predicate<? super Path> predicate = path -> String.valueOf(path).endsWith(".java");
-		// Files.walk(currentDirectory, 5).filter(predicate).forEach(System.out::println);
+		//Files.walk(currentDirectory, 5).filter(predicate).forEach(System.out::println);
 
 		BiPredicate<Path, BasicFileAttributes> javaMatcher = (path, attributes) -> String.valueOf(path).contains(".java");
 		
 		BiPredicate<Path, BasicFileAttributes> directoryMatcher = (path, attributes) -> attributes.isDirectory();
 
 		// Files.find(currentDirectory, 4, javaMatcher).forEach(System.out::println);
-		Files.find(currentDirectory, 4, directoryMatcher).forEach(System.out::println);
+		//Files.find(currentDirectory, 4, directoryMatcher).forEach(System.out::println);
 	}
 
 }
