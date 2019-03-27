@@ -18,8 +18,8 @@ class Task2 implements Runnable {
 	@Override
 	public void run() {
 		System.out.println("\nTask 2 started..");
-		for (int i = 201; i < 299; i++) {
-			System.out.print(i + " ");
+		for (int j = 201; j < 299; j++) {
+			System.out.print(j + " ");
 		}
 
 		System.out.println("\nEnd of Task 2..");
@@ -43,22 +43,22 @@ public class ThreadRunner {
 		Thread task2Thread = new Thread(task2);
 		task2Thread.start();
 
-		Runnable r = () -> {
-			System.out.println("\nTask 4 started..");
-			for (int i = 401; i < 499; i++) {
-				System.out.print(i + " ");
-			}
-			System.out.println("\nEnd of Task 4..");
-		};
+		/*Runnable r = () -> {
+				System.out.println("\nTask 4 started..");
+				for (int i = 401; i < 499; i++) {
+					System.out.print(i + " ");
+				}
+				System.out.println("\nEnd of Task 4..");
+		};*/
 
-		Thread task4 = new Thread(r);
-		task4.start();
+		// Thread task4 = new Thread(r);
+		// task4.start();
 
 		// Task 3
 
 		System.out.println("\nTask 3 started..");
-		for (int i = 301; i < 399; i++) {
-			System.out.print(i + " ");
+		for (int k = 301; k < 399; k++) {
+			System.out.print(k + " ");
 		}
 		System.out.println("\nEnd of Task 3..");
 
