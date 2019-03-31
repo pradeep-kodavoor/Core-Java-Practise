@@ -6,7 +6,7 @@ public class ThreadInterruptionRunner {
 
 		MyThread7 t = new MyThread7();
 		t.start();
-		t.sleep(1000);
+		MyThread7.sleep(1000);
 		t.interrupt();
 		// System.out.println("Complete main()..");
 

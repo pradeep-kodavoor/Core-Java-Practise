@@ -26,11 +26,11 @@ public class SubClass extends SuperClass {
 		
 		SuperClass superClass = new SubClass();
 		
-		superClass.staticMethod();
+		// superClass.staticMethod(); // SuperClass: inside staticMethod
 		
 		SubClass subClass = new SubClass();
 
-		subClass.staticMethod();
+		// subClass.staticMethod(); // SubClass: inside staticMethod
 
 	}
 
