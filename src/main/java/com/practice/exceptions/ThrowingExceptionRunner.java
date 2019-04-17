@@ -8,7 +8,7 @@ public class ThrowingExceptionRunner {
 		/* try { */
 			dollar.add(euro);
 		/*
-		 * } catch (CurrenciesDoNoMatchException e) { // TODO Auto-generated
+		 * } catch (CurrenciesDoNoMatchException e) { 
 		 * catch block e.printStackTrace(); }
 		 */
 		System.out.println(dollar);

@@ -68,7 +68,6 @@ public class PracticeClass1 {
 	}
 
 	private static void sum(int i, int j) {
-		// TODO Auto-generated method stub
 
 	}
 
